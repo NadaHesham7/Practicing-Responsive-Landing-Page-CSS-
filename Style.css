@@ -1,0 +1,74 @@
+.color1 {
+  color: white;
+}
+
+body {
+  padding-left: 120px;
+  padding-right: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #edb33c;
+  color: #0d2f3f;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #0d2f3f;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #0d2f3f;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #0d2f3f;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #0d2f3f;
+}
+
+#Contact {
+  background-color: #286f6c;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  color: white;
+}
+
+.font1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: white;
+}
+
+.font2 {
+  font-size: 2em;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 00.9px;
+}
+
+.button1 {
+  width: 300px;
+  text-align: center;
+  background-color: #286f6c;
+  color: white;
+}
+
+section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img {
+  width: 300px;
+  border-radius: 150px;
+}
+/*# sourceMappingURL=Style.css.map */

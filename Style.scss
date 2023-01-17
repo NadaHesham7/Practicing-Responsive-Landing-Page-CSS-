@@ -1,0 +1,144 @@
+.color1 {
+    color: white;
+}
+
+//our main colors: 
+$mainColor: #286f6c;
+$backgroundColor: #edb33c;
+$textColor: #0d2f3f;
+
+body {
+    padding-left: 120px;
+    padding-right: 120px;
+    box-sizing: border-box;
+    background-color: $backgroundColor;
+    color: $textColor;
+}
+
+@mixin flexXCenter {
+    display: flex;
+    justify-content: center;
+}
+
+//centering the Y axis: 
+@mixin flexYCenter {
+    display: flex;
+    align-items: center;
+
+}
+
+@mixin textCentered {
+    text-align: center;
+}
+
+//centering both : 
+@mixin padBoth {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin border {
+    border: solid 0.5px white;
+}
+
+@mixin aLine {
+    border-bottom: solid 1px gray;
+}
+
+@mixin centerText {
+    text-align: center;
+}
+
+//headings 
+@mixin headings ($size) {
+    @if($size ==h1) {
+        font-size: 2.5em;
+        font-weight: 800;
+        color: $textColor;
+    }
+
+    @else if($size ==h2) {
+        font-size: 1.8em;
+        font-weight: 700;
+        color: $textColor;
+    }
+
+    @else if($size ==h3) {
+        font-size: 1.6em;
+        font-weight: 700;
+        color: $textColor;
+    }
+
+    @else if($size ==h4) {
+        font-size: 1.4em;
+        font-weight: 500;
+        color: $textColor;
+    }
+
+    @else if($size ==h5) {
+        font-size: 1.2em;
+        font-weight: 500;
+        // color: pink
+        color: $textColor;
+    }
+
+    @else {
+        font-size: 1em;
+        font-weight: 500;
+        color: $textColor;
+    }
+
+}
+
+h3 {
+    @include headings(h3);
+}
+
+h1 {
+    @include headings(h1);
+}
+
+h4 {
+    @include headings(h4);
+}
+
+h2 {
+    @include headings(h2);
+    // @include centerText;
+}
+
+#Contact {
+    background-color: $mainColor;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: white;
+}
+
+.font1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+}
+
+.font2 {
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 00.9px;
+}
+
+.button1 {
+    width: 300px;
+    @include textCentered;
+    background-color: #286f6c;
+    color: white;
+}
+
+section {
+    @include padBoth;
+}
+
+img {
+    width: 300px;
+    border-radius: 150px;
+}
